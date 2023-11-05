@@ -21,4 +21,8 @@ c = Canvas(cb)
 c.set_limits([0,7], [0,7], [0,7])
 c.show()
 ```
-<img alt="Cube Image" src="https://imgur.com/XEEUPHm">
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/XEEUPHm">
+ <source media="(prefers-color-scheme: light)" srcset="(https://imgur.com/XEEUPHm)">
+ <img alt="Cube Image" src="https://imgur.com/XEEUPHm">
+</picture>
