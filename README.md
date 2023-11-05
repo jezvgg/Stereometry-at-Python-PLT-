@@ -21,8 +21,4 @@ c = Canvas(cb)
 c.set_limits([0,7], [0,7], [0,7])
 c.show()
 ```
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://imgur.com/XEEUPHm">
- <source media="(prefers-color-scheme: light)" srcset="(https://imgur.com/XEEUPHm)">
- <img alt="Cube Image" src="https://imgur.com/XEEUPHm">
-</picture>
+![Cube Image](https://github.com/jezvgg/Stereometry-at-Python-PLT-/assets/40557881/c496603b-d985-4753-a6a4-029345d2e812)
