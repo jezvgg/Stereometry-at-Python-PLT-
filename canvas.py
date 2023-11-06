@@ -19,8 +19,10 @@ class Canvas:
 
     
     def append(self, *args: list):
-        lim = max(args, key=lambda x: x.points.max()).points.max()
-        self.set_limits(5, 5, 5)
+        limMax = max(args, key=lambda x: x.points.max()).points.max()
+        limMin = min(args, key=lambda x: x.points.min()).points.min()
+        print(limMax, limMin)
+        self.set_limits([limMin, limMax], [limMin, limMax], [limMin, limMax])
         for arg in args:
             self._draw_figure(arg)
 
