@@ -18,7 +18,7 @@ class Cilinder(Figure):
     def dots(sself, center_x: int = 2, center_y: int = 2, center_z: int = 2, 
                  r:int = 1, h:int = 1):
 
-        edge_n = 13
+        edge_n = 20
         edge = np.linspace(0, 2*np.pi, edge_n)
         x = np.array([])
         y = np.array([])

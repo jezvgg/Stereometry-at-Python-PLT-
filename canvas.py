@@ -8,7 +8,7 @@ class Canvas:
     Canvas to show figures in 3D
     '''
     __fig = plt.figure()
-    __ax = plt.subplot(111, projection='3d')
+    _ax = plt.subplot(111, projection='3d')
     x = 100
     y = 100
     z = 100
@@ -22,10 +22,10 @@ class Canvas:
         lim = max(args, key=lambda x: x.points.max()).points.max()
         self.set_limits(5, 5, 5)
         for arg in args:
-            self.__draw_figure(arg)
+            self._draw_figure(arg)
 
 
-    def __draw_figure(self, figure):
+    def _draw_figure(self, figure):
         points = figure.points
         color = figure.color 
         for dim in [0,1,2]:
@@ -41,13 +41,13 @@ class Canvas:
                 lines[dim] = [z]*len(point)
                 lines[dims[0]] = point[:, 0]
                 lines[dims[1]] = point[:, 1]
-                self.__ax.plot(*lines, color)
+                self._ax.plot(*lines, color)
 
 
     def set_limits(self, x,y,z):
-        self.__ax.set_xlim(x)
-        self.__ax.set_ylim(y)
-        self.__ax.set_zlim(z)
+        self._ax.set_xlim(x)
+        self._ax.set_ylim(y)
+        self._ax.set_zlim(z)
 
 
     def show(self):

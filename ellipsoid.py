@@ -31,10 +31,6 @@ class Ellipsoid(Figure):
             y = np.append(y,center_y+b*np.cos(edge)*np.sin(Z))
             z = np.append(z,[center_z+c*np.cos(Z)]*edge_n)
 
-        x = np.append(x, x[::-1])
-        y = np.append(y, y[::-1])
-        z = np.append(z, np.add(z, 0.5))
-
         return np.array(list(zip(x,y,z)))
     
 
