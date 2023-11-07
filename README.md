@@ -48,3 +48,6 @@ But the algorithm for constructing figures turned out to be ineffective. He's no
 This picture shows the difference between Canvas and CanvasV2.
 ![Figure_11](https://github.com/jezvgg/Stereometry-at-Python-PLT-/assets/40557881/f104a7cb-d624-4f02-a58d-62063444ea52)
 As you can see, the new algorithm, although it removed the creation of edges inside the ball, but it works just as badly.
+
+As a result, I decided to combine both of these algorithms. If you take slices on only one axis and connect them, and then connect the slices using the nearest neighbors. Then we get a good result.
+![Figure_12](https://github.com/jezvgg/Stereometry-at-Python-PLT-/assets/40557881/02957046-b275-4b78-8609-0364fff82c4d)
