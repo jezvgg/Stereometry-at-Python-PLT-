@@ -1,9 +1,5 @@
-from canvasV2 import CanvasV2
-from parallelepiped import Parallelepiped
-from cube import Cube
-from ellipsoid import Ellipsoid
-from sphere import Sphere
-from cilinder import Cilinder
+from Project.Canvas import CanvasV2
+from Project.Figures import *
 
 p = Parallelepiped(start_x=1)
 cb = Cube(start_x=3, start_y=3, start_z=3, color='m')
