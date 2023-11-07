@@ -1,4 +1,4 @@
-from canvas import Canvas
+from Project.Canvas.canvas import Canvas
 import numpy as np
 import math
 

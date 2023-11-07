@@ -1,4 +1,4 @@
-from ellipsoid import Ellipsoid
+from Project.Figures.ellipsoid import Ellipsoid
 
 class Sphere(Ellipsoid):
 

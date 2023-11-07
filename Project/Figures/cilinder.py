@@ -1,4 +1,4 @@
-from figure import Figure
+from Project.Figures.figure import Figure
 import numpy as np
 
 class Cilinder(Figure):

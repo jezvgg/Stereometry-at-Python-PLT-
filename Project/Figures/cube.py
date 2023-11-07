@@ -1,4 +1,4 @@
-from parallelepiped import Parallelepiped
+from Project.Figures.parallelepiped import Parallelepiped
 
 class Cube(Parallelepiped):
 
