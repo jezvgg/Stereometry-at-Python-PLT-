@@ -1,6 +1,8 @@
 import numpy as np
 from figure import Figure
+from functools import total_ordering
 
+@total_ordering
 class Parallelepiped(Figure):
     __dots = np.array([])
     __square = 0
@@ -16,6 +18,16 @@ class Parallelepiped(Figure):
         self.__square = a*b*2 + a*h*2 + b*h*2
         self.color = color
     
+
+    def __eq__(self, x: int):
+        return self.size == x
+    
+    def __it__(self, x: int):
+        return self.size < x
+    
+    def __gt__(self, x: int):
+        return self.size > x
+
 
     def dots(self, start_x: int = 0, start_y: int = 0, start_z: int = 0, 
                  a:int = 1, b:int = 1, h:int = 2):

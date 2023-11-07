@@ -1,7 +1,8 @@
 from figure import Figure
 import numpy as np
+from functools import total_ordering
 
-
+@total_ordering
 class Ellipsoid(Figure):
     __dots = np.array([])
     __square = 0
