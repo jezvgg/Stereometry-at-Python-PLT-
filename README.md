@@ -51,3 +51,6 @@ As you can see, the new algorithm, although it removed the creation of edges ins
 
 As a result, I decided to combine both of these algorithms. If you take slices on only one axis and connect them, and then connect the slices using the nearest neighbors. Then we get a good result.
 ![Figure_12](https://github.com/jezvgg/Stereometry-at-Python-PLT-/assets/40557881/02957046-b275-4b78-8609-0364fff82c4d)
+
+# Amogus
+![Figure 69](https://media.tenor.com/nCv8sCQi3s4AAAAC/among-us.gif)
